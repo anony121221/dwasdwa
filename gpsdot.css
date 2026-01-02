@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GPS Dot</title>
+<style>
+body {
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* GPS container */
+.gps {
+  position: relative;
+  width: 18px;
+  height: 18px;
+}
+
+/* Core dot */
+.gps::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #1e90ff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #fff;
+  z-index: 2;
+}
+
+/* Accuracy / pulse ring */
+.gps::after {
+  content: "";
+  position: absolute;
+  inset: -10px;
+  background: rgba(30, 144, 255, 0.35);
+  border-radius: 50%;
+  animation: pulse 1.8s infinite ease-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.4);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="gps"></div>
+
+</body>
+</html>
