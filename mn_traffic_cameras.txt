@@ -2,7 +2,7 @@ Title: Minnesota Traffic Cameras
 RefreshSeconds: 300
 Threshold: 999
 Font: 1, 11, 1, "Courier New"
-IconFile: 1, 25, 25, 12, 12, "https://raw.githubusercontent.com/anony121221/dwasdwa/refs/heads/main/gpsdot.svg"
+IconFile: 1, 24, 24, 12, 12, "https://raw.githubusercontent.com/anony121221/dwasdwa/main/gpsdot.png"
 
 Icon: 44.02249,-92.74633,0,1,1
 Object: 44.02249,-92.74633
